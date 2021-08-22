@@ -1,0 +1,32 @@
+{
+  "name": "LazyHTML",
+  "version": "1.0",
+  "homepage": "https://github.com/Niresh12495/LazyHTML",
+  "authors": [
+    "Niresh <niresh12495@gmail.com>"
+  ],
+  "description": "Asynchronous Loader",
+  "main": "dist/lazyhtml.js",
+  "keywords": [
+    "lazyload",
+    "asynchronous-loading",
+    "responsive",
+    "lazyload-ads",
+    "lazyload-javascript",
+    "lazyload-css",        
+    "lazyload-widgets",
+    "lazyload-html",
+    "intersection-observer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "gruntfile.js",
+    "package.json"
+  ]
+}
