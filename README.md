@@ -71,7 +71,8 @@ npm install --save lazyhtml
 
 
 
-More Info about [LazyHTML ](https://www.guest.blog/post/12111/lazyhtml-a-break-through-in-lazyloading-elements/)
-[Lazy Loading Ads ](https://www.guest.blog/post/12113/lazyload-ads/)
-[Hire me on Fiverr](https://www.fiverr.com/niresh12495) 
 
+
+* More Info about [LazyHTML ](https://www.guest.blog/post/12111/lazyhtml-a-break-through-in-lazyloading-elements/)
+*  [Lazy Loading Ads ](https://www.guest.blog/post/12113/lazyload-ads/)
+* Hire me on Fiverr](https://www.fiverr.com/niresh12495)
