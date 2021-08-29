@@ -4,7 +4,7 @@
   "description": "LazyHTML is an OpenSource Javascript Library that Supports Lazy Loading of any elements without Modifying Code, LazyHTML can lazy load Ads, Videos, Images, Widgets, Javascript, CSS, Inline-Javascript, Inline-CSS & Any HTML.",
   "main": "dist/lazyhtml.min.js",
  "dependencies": {
-    "postscribe": "*"
+    "postscribe": "2.0.8"
   },
  "devDependencies": {
     "grunt": "~1.4.1",
@@ -35,7 +35,8 @@
     "lazyload-css",
     "lazyload-widgets",
     "lazyload-html",
-    "intersection-observer"
+    "intersection-observer",
+    "Lazy Load Adsense Ads"    
   ],
   "author": "Niresh (niresh12495@gmail.com)",
   "license": "SEE LICENSE IN LICENSE",
