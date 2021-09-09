@@ -1,5 +1,6 @@
 LazyHTML = (function() {
 	'use strict';
+console.log('Powered by LazyHTML: https://github.com/Niresh12495/LazyHTML ```Lazy Load Ads, Images, Widgets, CSS, JS and any HTML```');	
 	var debug = false;
 	if(document.currentScript.getAttribute('debug') !== null) {
 		var debug = true;
@@ -99,7 +100,7 @@ LazyHTML = (function() {
 			var rootMarginValue = "100%"; // Default Value
 			log("Root Margin Value Undefined, Using Default Value");
 			var isMobile = /Mobile/i.test(navigator.userAgent) || false;
-			log("Is Mobile " + isMobile);
+		//	log("Is Mobile " + isMobile);
 			if(isMobile) {
 				var rootMarginValue = "175%";
 			} else {
@@ -108,6 +109,7 @@ LazyHTML = (function() {
 		} else {
 			var rootMarginValue = rootmarginvariable + "%";
 		}
+		var thresholdvalue = rootMarginValue;
 		rootMarginValue = '0%' + ' ' + '0%' + ' ' + rootMarginValue + ' ' + '0%';
 		var io = new IntersectionObserver(function(entries, observer) {
 			entries.forEach(function(entry) {
@@ -145,8 +147,8 @@ LazyHTML = (function() {
 						}
 						if(!isLoaded) {
 							log('  ')
-							log('*** Preparing to lazyhtml HTML Element with Intersection Observer ***');
-							log('Root Margin Value is ' + rootMarginValue);
+							log('*** Preparing to Lazy Load HTML Element with Intersection Observer ***');
+							log('Threshold Value is ' + thresholdvalue);
 							adReplace(element, lazyAdEl.innerHTML, counter);
 							// stop the clock…
 							timeToComplete = (new Date().getTime() - startTime);
@@ -290,13 +292,14 @@ LazyHTML = (function() {
 
 	function adReplace(el, text, counter) {
 		var node, target;
-		log('Injecting lazy-loaded Ad', el);
+		log('Injecting Element', el);
+		var logelement = el;
 		text = stripCommentBlock(text);
 		setTimeout(function() {
 			postscribe(el, text, {
 				releaseAsync: true,
 				error: function() {
-					console.info('Some error occurred in rendering Block ' + counter);
+					console.info('Some error occurred in rendering LazyHTML Block ' + counter +' : ', el);
 				}
 			});
 		}, 0);
@@ -311,7 +314,7 @@ LazyHTML = (function() {
 			if((!supportsIntersectionObserver)) {
 				// No Intersection observer
 				instantload(el);
-				   log("No Intersection Observer");
+	//			   log("No Intersection Observer");
 			} else if(el.getAttribute('eager') !== null) {
 				instantload(el);
 				// log("Instant Loaded");
@@ -319,19 +322,19 @@ LazyHTML = (function() {
 			// Intersection Observer Available
 			else if(el.getAttribute('onvisible') !== null) {
 				lazyhtmlloader(el, true);
-				log("Observer available, But Onvisible");
+		//		log("Observer available, But Onvisible");
 			} else if(el.getAttribute('threshold') !== null) {
 				var thresholdvariable = el.getAttribute('threshold');
 				if(!isNaN(thresholdvariable)) {
 					lazyhtmlloader(el, false, el.getAttribute('threshold'));
-					log("Observer available, Using threshold Value " + thresholdvariable);
+		//			log("Observer available, Using threshold Value " + thresholdvariable);
 				} else {
 					lazyhtmlloader(el, false);
-					log(thresholdvariable + ' Is not an Integer');
+		//			log(thresholdvariable + ' Is not an Integer');
 				}
 			} else {
 				lazyhtmlloader(el, false);
-				log("Observer available, Using Default Values");
+			//	log("Observer available, Using Default Values");
 			}
 		}
 	};
@@ -382,5 +385,4 @@ LazyHTML = (function() {
 		}
 		window.XMLHttpRequest = newXHR;
 	});
-console.log('Powered by LazyHTML: https://github.com/Niresh12495/LazyHTML ```Lazy Load Ads, Images, Widgets, CSS, JS and any HTML```');
 })();
