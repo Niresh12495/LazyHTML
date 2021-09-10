@@ -1,12 +1,12 @@
 {
   "name": "lazyhtml",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "LazyHTML is an OpenSource Javascript Library that Supports Lazy Loading of any elements without Modifying Code, LazyHTML can lazy load Ads, Videos, Images, Widgets, Javascript, CSS, Inline-Javascript, Inline-CSS & Any HTML.",
   "main": "dist/lazyhtml.min.js",
- "dependencies": {
+  "dependencies": {
     "postscribe": "2.0.8"
   },
- "devDependencies": {
+  "devDependencies": {
     "grunt": "~1.4.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-clean": "~2.0.0",
@@ -16,7 +16,7 @@
     "grunt-contrib-watch": "~1.1.0",
     "rimraf": "^3.0.2"
   },
- "scripts": {
+  "scripts": {
     "prepublishOnly": "npm run build",
     "build": "rimraf dist && grunt"
   },
@@ -36,7 +36,7 @@
     "Lazy-Load-widgets",
     "Lazy-Load-html",
     "Intersection-Observer",
-    "Lazy-Load-Adsense-Ads"    
+    "Lazy-Load-Adsense-Ads"
   ],
   "author": "Niresh (niresh12495@gmail.com)",
   "license": "SEE LICENSE IN LICENSE",
