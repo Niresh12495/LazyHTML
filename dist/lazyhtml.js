@@ -1,5 +1,5 @@
 /**
-* lazyhtml v 1.2.2
+* lazyhtml v 1.2.3
 * LazyHTML is an OpenSource Javascript Library that Supports Lazy Loading of any elements without Modifying Code, LazyHTML can lazy load Ads, Videos, Images, Widgets, Javascript, CSS, Inline-Javascript, Inline-CSS & Any HTML.
 * Niresh (niresh12495@gmail.com) 
 * Facebook.com/Niresh 
