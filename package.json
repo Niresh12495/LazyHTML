@@ -1,6 +1,6 @@
 {
   "name": "lazyhtml",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "LazyHTML is an OpenSource Javascript Library that Supports Lazy Loading of any elements without Modifying Code, LazyHTML can lazy load Ads, Videos, Images, Widgets, Javascript, CSS, Inline-Javascript, Inline-CSS & Any HTML.",
   "main": "dist/lazyhtml.min.js",
  "dependencies": {
@@ -25,17 +25,17 @@
     "url": "git+https://github.com/Niresh12495/LazyHTML.git"
   },
   "keywords": [
-    "lazyload",
-    "asynchronous-loading",
-    "responsive",
-    "lazyload-ads",
-    "lazyload-javascript",
-    "lazyload-js",
-    "lazyload-stylesheets",
-    "lazyload-css",
-    "lazyload-widgets",
-    "lazyload-html",
-    "intersection-observer",
+    "Lazy-Load",
+    "Asynchronous-Loading",
+    "Responsive",
+    "Lazy-Load-ads",
+    "Lazy-Load-javascript",
+    "Lazy-Load-js",
+    "Lazy-Load-stylesheets",
+    "Lazy-Load-css",
+    "Lazy-Load-widgets",
+    "Lazy-Load-html",
+    "Intersection-Observer",
     "Lazy-Load-Adsense-Ads"    
   ],
   "author": "Niresh (niresh12495@gmail.com)",

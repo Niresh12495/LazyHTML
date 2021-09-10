@@ -95,10 +95,10 @@ console.log('Powered by LazyHTML: https://github.com/Niresh12495/LazyHTML ```Laz
 		// log(onvisible);
 		if(onvisible === true) {
 			var rootMarginValue = "0%";
-			log("Onvisible Margin True");
+	//		log("Onvisible Margin True");
 		} else if(typeof rootmarginvariable === 'undefined' || rootmarginvariable === null) {
 			var rootMarginValue = "100%"; // Default Value
-			log("Root Margin Value Undefined, Using Default Value");
+		//	log("Root Margin Value Undefined, Using Default Value");
 			var isMobile = /Mobile/i.test(navigator.userAgent) || false;
 		//	log("Is Mobile " + isMobile);
 			if(isMobile) {
