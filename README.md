@@ -30,7 +30,7 @@ LazyHTML was initially developed with the intention to Lazy Load Ads
 Load the script.
 
 ```html
- <script async src="https://cdn.jsdelivr.net/npm/lazyhtml@1.2.1/dist/lazyhtml.min.js" crossorigin="anonymous" debug></script>
+ <script async src="https://cdn.jsdelivr.net/npm/lazyhtml@1.2.3/dist/lazyhtml.min.js" crossorigin="anonymous" debug></script>
 ```
 
 
@@ -74,6 +74,6 @@ npm install --save lazyhtml
 
 
 * More Info about [LazyHTML ](https://www.guest.blog/post/12111/lazyhtml-a-break-through-in-lazyloading-elements/)
-*  [Lazy Loading Ads ](https://www.guest.blog/post/12113/lazyload-ads/)
+* [Lazy Loading Ads ](https://www.guest.blog/post/12113/lazyload-ads/)
 * [Hire me on Fiverr](https://www.fiverr.com/niresh12495)
 
